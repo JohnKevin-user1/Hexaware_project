@@ -1,0 +1,78 @@
+/* General Body Styling (optional, but good for overall page look) */
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Login Container */
+.login-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Heading */
+.login-container h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.login-container input {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #555;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.login-container input::placeholder {
+  color: #aaa;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Login Button */
+.login-container button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  letter-spacing: 0.5px;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.login-container button:active {
+  background-color: #004085;
+  transform: translateY(0);
+}
