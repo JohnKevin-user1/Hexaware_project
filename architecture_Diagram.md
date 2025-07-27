@@ -48,13 +48,11 @@ graph TD
     subgraph Community & Engagement
         BLOG[📰 Blog Page]:::page;
         POST[📖 Blog Post Page]:::page;
-        CLANS[🤝 Clans/Community Page]:::page;
-        CLAND[👨‍👩‍👧‍👦 Clan Detail Page]:::page;
+        
 
         DASH -- "Navigates to Blog" --> BLOG;
-        DASH -- "Navigates to Clans" --> CLANS;
         BLOG -- "Reads an Article" --> POST;
-        CLANS -- "Joins/Views a Clan" --> CLAND;
+        
     end
 
     %% Class Assignments
